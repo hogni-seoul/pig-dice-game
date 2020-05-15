@@ -98,7 +98,7 @@ function hold() {
         playerScores[activePlayer] += activeScore;
         currentPlayer.querySelector('.total-score').textContent = playerScores[activePlayer];
         
-        if (playerScores[activePlayer] >= 20) {
+        if (playerScores[activePlayer] >= 100) {
             gameState = false;
             hideDice();
             const sign = document.querySelector('.sign');
