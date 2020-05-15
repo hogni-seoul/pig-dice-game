@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pig Dice Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button class="btn-new"><i class="fas fa-gamepad"></i> New Game</button>
+        </div>
+        <div class="top scoreBoard">
+            <div class="player1 panel player1-panel">
+                <p class="name player1-name">Player1</p>
+                <div class="total-score player1-total-score">
+                    20
+                </div>
+                <div class="current-score-box">
+                    <div class="current-score-label">Current Score</div>
+                    <div class="current-score player1-current-score">
+                        40
+                    </div>
+                </div>
+            </div>
+            <div class="player2 panel player2-panel">
+                <p class="name player2-name">Player2</p>
+                <div class="total-score player2-total-score">
+                    20
+                </div>
+                <div class="current-score-box">
+                    <div class="current-score-label">Current Score</div>
+                    <div class="current-score player2-current-score">
+                        40
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom diceBoard">
+            <div class="dicePanel">
+                <img class="dice dice1" src="images/dice-3.png" style="display: block;" >
+                <img class="dice dice2" src="images/dice-5.png" style="display: block;">
+                <div class="sign hidden">Press<p>New Game</p></div>
+            </div>
+            <div class="controlPanel">
+                <button class="btn-roll" style="display: block;"><i class="fas fa-sync-alt"></i> Roll Dice</button>
+                <button class="btn-hold" style="display: block;"><i class="fas fa-stop"></i> Hold</button>
+            </div>
+        </div>
+    </div>
+    <div class="bigScreen">
+        <p>화면을 더 작게 만들어주세요 🎲</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
